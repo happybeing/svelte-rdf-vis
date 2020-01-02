@@ -1,9 +1,11 @@
 {
     "name": "svelte-rdf-vis",
     "version": "0.0.1",
-    "description": "",
+    "description": "Svelte RDF component for visualisation experiments",
     "keywords": [
       "svelte",
+      "rdf",
+      "visualisation",
       "rollup",
       "typescript"
     ],
@@ -13,7 +15,7 @@
     "homepage": "",
     "bugs": {
       "url": "https://github.com/theWebalyst/svelte-rdf-vis/issues/",
-      "email": ""
+      "email": "svelte-rdf-vis@happybeing.com"
     },
     "scripts": {
       "cleanup": "rimraf ./build",
