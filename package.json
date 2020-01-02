@@ -84,6 +84,7 @@
     }
   },
   "dependencies": {
-    "rdflib": "^1.0.7-2"
+    "rdflib": "^1.0.7-2",
+    "serialize-javascript": "^2.1.2"
   }
 }
