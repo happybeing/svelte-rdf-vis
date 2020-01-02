@@ -3,8 +3,8 @@ const commonjs = require("rollup-plugin-commonjs");
 const resolve = require("rollup-plugin-node-resolve");
 const serve = require("rollup-plugin-serve");
 const html = require("rollup-plugin-bundle-html");
-const typescript = require("rollup-plugin-typescript2");
-const tscompile = require("typescript");
+// const typescript = require("rollup-plugin-typescript2");
+// const tscompile = require("typescript");
 const { terser } = require("rollup-plugin-terser");
 const livereload = require("rollup-plugin-livereload");
 
@@ -14,7 +14,7 @@ const isTest = process.env.NODE_ENV === "test";
 
 const plugins = [
   commonjs({ include: "node_modules/**" }),
-  typescript({ typescript: tscompile }),
+  // typescript({ typescript: tscompile }),
   svelte({
     dev: isProd ? false : true,
     extensions: [".svelte"],
@@ -46,7 +46,7 @@ if (isDev) {
 }
 
 module.exports = {
-  input: "src/index.ts",
+  input: "src/index.js",
   output: {
     sourcemap: true,
     name: "main",
