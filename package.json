@@ -32,6 +32,7 @@
     "dev": "webpack-dev-server --content-base public"
   },
   "dependencies": {
+    "@rdfjs/fetch": "^2.0.0",
     "graphy": "^4.0.3"
   }
 }
