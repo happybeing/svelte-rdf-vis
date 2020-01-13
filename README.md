@@ -1,8 +1,10 @@
-# Svelte RDF component for visualisation experiments
+# Svelte RDF Visualisation Lab
 
 WORK IN PROGRESS
 
-# LICENSE
+Svelte components for experimental visualisation of RDF.
+
+## LICENSE
 
 License: GPLv3 (see LICENSE) except templated portion which is MIT (see LICENSE-FROM-TEMPLATE)
 

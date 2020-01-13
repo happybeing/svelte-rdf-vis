@@ -1,20 +1,26 @@
-<script lang="ts">
+<script>
   import { writable } from "svelte/store";
-  import Counter from "./Counter.svelte";
+  // import GraphD3SVG from "./NetworkGraphD3SVG.svelte";
+  // import GraphSvelteSVG from './NetworkGraphSvelteSVG.svelte';
+  // import GraphCanvas from './NetworkGraphCanvas.svelte';
+  // import GraphCanvasIdContext from './NetworkGraphCanvasIdContext.svelte';
+  import lesMisData from './data/data-les-miserables.js';
 
-  const count = writable(100);
-  export let name: string;
+  const rdfData = writable(0);
+  const graph = writable(0);
+
+  import RdfInterface from "./RdfInterface.svelte";
+  import VisStore from "./RdfVisStore.svelte";
+
 </script>
 
 <style>
-  h1 {
-    color: red;
-  }
+	h1 {
+		color: purple;
+	}
 </style>
 
-<h1>Hello {name}!</h1>
-<p>
-  <Counter />
-  <Counter value={1}>Counter 1</Counter>
-  <Counter value={$count} step={3}>Counter 2</Counter>
-</p>
+<h1>Svelte RDF Visualisation Lab</h1>
+<RdfInterface></RdfInterface>
+<!-- <VisStore {rdfData} {graph} /> -->
+<!-- <GraphD3SVG {graph} /> -->
