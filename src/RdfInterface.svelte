@@ -4,6 +4,8 @@ Loads RDF into rdfDataset in ./stores.js using graphy
 
 A basis for a generic Svelte component that interfaces to different 
 RDF sources using different libraries.
+
+TODO: scope ways to provide write/update in conjunction with RdfVisStore
 -->
 
 <script>
