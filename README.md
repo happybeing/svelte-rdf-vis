@@ -1,8 +1,6 @@
 # Svelte RDF Visualisation Lab
 
-WORK IN PROGRESS
-
-Svelte components for experimental visualisation of RDF.
+Svelte components for experimental visualisation of RDF - work in progress.
 
 ## Get started
 To create a new project based on this template using [degit](https://github.com/Rich-Harris/degit):
