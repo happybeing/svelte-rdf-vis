@@ -3,7 +3,7 @@
   // import GraphSvelteSVG from './NetworkGraphSvelteSVG.svelte';
   import NetworkGraphCanvas from './NetworkGraphCanvas.svelte';
   import RdfInterface from "./RdfInterface.svelte";
-  import VisStore from "./RdfVisStore.svelte";
+  import RdfVisStore from "./RdfVisStore.svelte";
 
   import {graph} from "./stores.js";
 
@@ -21,7 +21,7 @@ built using Sveltejs and D3js. Code on <a href="https://github.com/theWebalyst/s
 </p>
 <p>RdfInterface loads the RDF,  
 <RdfInterface/>
-VisStore maps the RDF to objects for visualisation,
-<VisStore/>
+RdfVisStore maps the RDF to objects for visualisation,
+<RdfVisStore/>
 NetworkGraphCanvas uses d3-force to display the graph.</p>
 <NetworkGraphCanvas {graph} />
