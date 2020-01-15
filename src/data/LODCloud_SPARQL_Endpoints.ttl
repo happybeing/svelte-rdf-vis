@@ -13,6 +13,7 @@
 @prefix :            <#> .
 @prefix source:      <http://www.openlinksw.com/data/turtle/oplweb/LODCloud_SPARQL_Endpoints.ttl> .
 @prefix sourceDAV:   <http://www.openlinksw.com/DAV/data/turtle/oplweb/LODCloud_SPARQL_Endpoints.ttl> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 sourceDAV:
    a schema:CreativeWork ;
