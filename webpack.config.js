@@ -48,7 +48,12 @@ module.exports = {
 					prod ? MiniCssExtractPlugin.loader : 'style-loader',
 					'css-loader'
 				]
-			}		]
+      },
+      {
+        test: /\.ttl$/i,
+        use: 'raw-loader',
+      }
+    ]
 	},
 	mode,
 	plugins: [
@@ -56,7 +61,5 @@ module.exports = {
 			filename: '[name].css'
     })
 	],
-  devtool: '#source-map', // #eval-source-map doesn't emit a map!?
-	// devtool: prod ? false: 'source-map'
-  target: 'web', // default!
+	devtool: prod ? false: 'source-map'
 };
