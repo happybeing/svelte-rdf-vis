@@ -1,13 +1,18 @@
-<!-- Provide the representation data for visualisation of an RDF dataset
+<!-- Map RDF to objects for visualisation
+
+input:
+  @param {RDF/JS: Dataset}  rdfDataset (./stores.js) 
+
+output:
+  @param {Object}           graph {nodes: [], links: []} (./stores.js) 
 
 This separates the raw RDF from data which is made available to a 
 visualisation component, such that:
 - TODO: maps between triples (Rdfjs dataset) and visualisation (JSON)
 - TODO: it isolates RDF and and application specific modelling from the visualisation and app
 - TODO: provides default representations for different visualisation types/components
-- TODO: supports addition of custom representations per the application or the data source
-- TODO: allows the application to modify or select the visual representation programmatically
-
+- TODO: support addition of custom representations per the application or the data source
+- TODO: allow the application to modify or select the visual representation programmatically
  -->
 
 <script>

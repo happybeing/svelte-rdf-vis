@@ -1,19 +1,22 @@
 <!-- Svelte wrapper for an RDF data sources (files, LDP, Solid etc.)
 
+Loads RDF into rdfDataset in ./stores.js using graphy
+
 A basis for a generic Svelte component that interfaces to different 
 RDF sources using different libraries.
-
-Initially using rdflib to obtain RDF as a blob, later the interface to the
-application components can be revised (e.g. to support streaming or supplying
-a triple store etc.)
-
 -->
 
 <script>
 import { onMount } from 'svelte';
 
 const readTtl = require('@graphy/content.ttl.read');
-const RdfDataset = require('@graphy/memory.dataset.fast');
+
+// Loads RDF into rdfDataset store using graphy
+import { rdfDataset } from "./stores.js";
+
+console.log('RdfInterface using graphy...');
+console.log('test', $rdfDataset);
+console.dir($rdfDataset);
 
 // import fetch from '@rdfjs/fetch';
 
@@ -29,11 +32,6 @@ const RdfDataset = require('@graphy/memory.dataset.fast');
 //     }
 //   }).catch(err => console.error(err));
 
-import { rdfDataset } from "./stores.js";
-
-console.log('Graphy...');
-console.log('test', $rdfDataset);
-console.dir($rdfDataset);
 
 import lodCloudRdf from './data/LODCloud_SPARQL_Endpoints.ttl';
 const textRdf = `

@@ -1,9 +1,7 @@
 <script>
-  import GraphD3SVG from "./NetworkGraphD3SVG.svelte";
+  import NetworkGraphD3SVG from "./NetworkGraphD3SVG.svelte";
   // import GraphSvelteSVG from './NetworkGraphSvelteSVG.svelte';
-  import GraphCanvas from './NetworkGraphCanvas.svelte';
-  // import GraphCanvasIdContext from './NetworkGraphCanvasIdContext.svelte';
-  // import lesMisData from './data/data-les-miserables.js';
+  import NetworkGraphCanvas from './NetworkGraphCanvas.svelte';
   import RdfInterface from "./RdfInterface.svelte";
   import VisStore from "./RdfVisStore.svelte";
 
@@ -18,9 +16,12 @@
 </style>
 
 <h1>Svelte RDF Visualisation Lab</h1>
-<p>Loaded using RdfInterface</p>
+<p>An app for prototyping RDF visualisation components 
+built using Sveltejs and D3js. Code on <a href="https://github.com/theWebalyst/svelte-rdf-vis">github</a>.
+</p>
+<p>RdfInterface loads the RDF,  
 <RdfInterface/>
-<p>Mapped using VisStore</p>
+VisStore maps the RDF to objects for visualisation,
 <VisStore/>
-<p>Graph using GraphCanvas</p>
-<GraphCanvas {graph} />
+NetworkGraphCanvas uses d3-force to display the graph.</p>
+<NetworkGraphCanvas {graph} />
