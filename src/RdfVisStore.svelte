@@ -27,25 +27,43 @@ import {graph} from "./stores.js";
 $: graph.update(() => rdfToVis($rdfDataset));
 
 function rdfToVis (dataset) {
-  let newGraph = {nodes: [], links:[] };
+  let graphMap = {nodes: new Map(), links: new Map() };
 
   console.log('rdfToVis', dataset)
 try {
     for (const quad of dataset) {
       console.log('Mapping quad: ', quad)
-      // TODO: filter duplicate nodes
       // TODO: implement better mapping to nodes and links
-      newGraph.nodes.push({id: quad.subject.value, group: 1})
-      newGraph.links.push({source: quad.subject.value, target:quad.object.value, value: 1})
-      newGraph.nodes.push({id: quad.object.value, group: 1})
+      graphMap.nodes.set(quad.subject.value, {id: quad.subject.value, group: 1});
+      graphMap.links.set(quad.subject.value + '--LINK--' + quad.object.value, {source: quad.subject.value, target:quad.object.value, value: 1});
+
+      // TODO: Don't treat all values as nodes as here:
+      graphMap.nodes.set(quad.object.value, {id: quad.object.value, group: 1});
     }
     // Create nodes and links from triples
-    return newGraph;
+    return {nodes: [...graphMap.nodes.values()], links: [...graphMap.links.values()]};
   } catch (err) {
     console.log(err);
   }
 }
-  
+
+function isNode (quad) {
+
+}
+
+function isNewNode (quad) {
+
+}
+
+function isLink (quad) {
+
+}
+
+function isValue (quad) {
+
+}
+
+
 </script>
 
 <!-- <div>
