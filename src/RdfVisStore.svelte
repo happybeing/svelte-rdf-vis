@@ -47,23 +47,6 @@ try {
   }
 }
 
-function isNode (quad) {
-
-}
-
-function isNewNode (quad) {
-
-}
-
-function isLink (quad) {
-
-}
-
-function isValue (quad) {
-
-}
-
-
 </script>
 
 <!-- <div>
