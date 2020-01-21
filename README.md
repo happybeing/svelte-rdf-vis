@@ -1,12 +1,11 @@
-# Svelte RDF Visualisation Lab
+# Experimental RDF Visualisations using Svelte
 
-Svelte components for experimental visualisation of RDF - work in progress.
+IMPORTANT: Work on **Visualisation Lab** continues in [visualisation-lab](https://github.com/theWebalyst/visualisation-lab) so this repo has been discontinued except for experimentation.
 
 ## Get started
-To create a new project based on this template using [degit](https://github.com/Rich-Harris/degit):
 
 ```bash
-npx degit sveltejs/svelte-rdf-vis
+git clone https://github.com/theWebalyst/svelte-rdf-vis
  svelte-rdf-vis
 
 cd svelte-rdf-vis
