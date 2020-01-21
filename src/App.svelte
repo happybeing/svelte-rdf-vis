@@ -16,12 +16,11 @@
 </style>
 
 <h1>Svelte RDF Visualisation Lab</h1>
-<p>An app for prototyping RDF visualisation components 
-built using Sveltejs and D3js. Code on <a href="https://github.com/theWebalyst/svelte-rdf-vis">github</a>.
+<p>This app is for prototyping RDF visualisation components build using Sveltejs and D3js. Code on <a href="https://github.com/theWebalyst/svelte-rdf-vis">github</a>.
 </p>
-<p>RdfInterface loads the RDF,  
+<p>Loaded using RdfInterface. 
 <RdfInterface/>
-RdfVisStore maps the RDF to objects for visualisation,
+Mapped using RdfVisStore.
 <RdfVisStore/>
-NetworkGraphCanvas uses d3-force to display the graph.</p>
+Graph using NetworkGraphCanvas.</p>
 <NetworkGraphCanvas {graph} />
